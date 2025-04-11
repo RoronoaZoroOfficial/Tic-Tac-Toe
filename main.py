@@ -1,5 +1,4 @@
 import random
-import tkinter
 from tkinter import *
 from functools import partial
 from tkinter import messagebox
@@ -182,10 +181,10 @@ def play():
     wpc = partial(withpc, menu)
     wpl = partial(withplayer, menu)
  
-    head = Button(menu, text="---Welcome to tic-tac-toe---",
-                  activeforeground='red',
-                  activebackground="yellow", bg="red",
-                  fg="yellow", width=500, font='summer', bd=5)
+    head = Button(menu, text="Tic Tac Toe Game",
+                  activeforeground='white',
+                  activebackground="gray", bg="gray",
+                  fg="white", width=900, font='summer', bd=5)
  
     B1 = Button(menu, text="Single Player", command=wpc,
                 activeforeground='red',
